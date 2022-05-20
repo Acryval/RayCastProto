@@ -1,0 +1,5 @@
+vec3 normal = vec3(0, 1, 0);
+normal.yz *= rot(o.rotation.x);
+normal.xy *= rot(o.rotation.z);
+normal.xz *= rot(o.rotation.y);
+return dot(p, normal) - o.position.x;
